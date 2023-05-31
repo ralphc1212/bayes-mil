@@ -1,6 +1,6 @@
 # Bayes-MIL: A New Probabilistic Perspective on Attention-based Multiple Instance Learning for Whole Slide Images
 
-This repository is the implementation of [Bayes-MIL: A New Probabilistic Perspective on Attention-based Multiple Instance Learning for Whole Slide Images](https://openreview.net/forum?id=_geIwiOyUhZ). 
+This repository is the implementation of [Bayes-MIL: A New Probabilistic Perspective on Attention-based Multiple Instance Learning for Whole Slide Images](https://openreview.net/forum?id=_geIwiOyUhZ). Parts of this project use code from [CLAM](https://github.com/mahmoodlab/CLAM). 
 
 ![Alt text](overview.png)
 
@@ -106,3 +106,9 @@ Modify the `heatmaps/configs/config_template.yaml` to filling out the config. Th
 ```shell
 CUDA_VISIBLE_DEVICES=0 nohup python -u create_heatmaps_bmil.py --config config_template.yaml &
 ```
+
+## License
+
+This code is made available under the GPLv3 License and is available for non-commercial academic purposes.
+
+
