@@ -111,4 +111,17 @@ CUDA_VISIBLE_DEVICES=0 nohup python -u create_heatmaps_bmil.py --config config_t
 
 This code is made available under the GPLv3 License and is available for non-commercial academic purposes.
 
+## Reference
 
+Please cite our paper if you use the core code of Bayes-MIL. 
+
+Yufei, Cui, et al. "Bayes-MIL: A New Probabilistic Perspective on Attention-based Multiple Instance Learning for Whole Slide Images." The Eleventh International Conference on Learning Representations. 2023.
+
+```
+@inproceedings{yufei2023bayes,
+  title={Bayes-MIL: A New Probabilistic Perspective on Attention-based Multiple Instance Learning for Whole Slide Images},
+  author={Yufei, Cui and Liu, Ziquan and Liu, Xiangyu and Liu, Xue and Wang, Cong and Kuo, Tei-Wei and Xue, Chun Jason and Chan, Antoni B},
+  booktitle={The Eleventh International Conference on Learning Representations},
+  year={2023}
+}
+```
