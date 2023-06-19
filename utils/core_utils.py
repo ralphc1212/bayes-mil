@@ -219,10 +219,10 @@ def train(datasets, cur, args):
     else:
         torch.save(model.state_dict(), os.path.join(args.results_dir, "s_{}_checkpoint.pt".format(cur)))
 
-    _, val_error, val_auc, val_ece_loss, _ = summary(model, val_loader, args.n_classes, bayes_args=['spvis'])
+    _, val_error, val_auc, val_ece_loss, _ = summary(model, val_loader, args.n_classes, bayes_args=bayes_args)
     print('Val error: {:.4f}, ROC AUC: {:.4f}, ece loss : {:.4f}'.format(val_error, val_auc, val_ece_loss))
 
-    results_dict, test_error, test_auc, test_ece_loss, acc_logger = summary(model, test_loader, args.n_classes, bayes_args=['spvis'])
+    results_dict, test_error, test_auc, test_ece_loss, acc_logger = summary(model, test_loader, args.n_classes, bayes_args=bayes_args)
     print('Test error: {:.4f}, ROC AUC: {:.4f}, ece loss : {:.4f}'.format(test_error, test_auc, test_ece_loss))
 
     for i in range(args.n_classes):
